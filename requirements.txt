@@ -6,3 +6,4 @@ sentence-transformers
 transformers
 huggingface-hub
 numpy
+langchain-community
