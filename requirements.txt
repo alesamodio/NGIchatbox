@@ -4,4 +4,5 @@ faiss-cpu
 openai
 sentence-transformers
 transformers
+huggingface-hub
 numpy
