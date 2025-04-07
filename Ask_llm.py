@@ -4,7 +4,7 @@ import os
 from config import VECTORSTORE_PATH, SIMILARITY_THRESHOLD, MAX_CHUNKS, EXTRA_CHUNKS
 
 # Set OpenAI API Key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 def query_llm(context, user_query):
     """Query OpenAI's GPT model using the retrieved context."""
