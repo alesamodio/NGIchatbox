@@ -1,5 +1,5 @@
 import openai
-import os
+import streamlit as st
 
 from config import VECTORSTORE_PATH, SIMILARITY_THRESHOLD, MAX_CHUNKS, EXTRA_CHUNKS
 
