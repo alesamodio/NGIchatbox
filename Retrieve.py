@@ -1,7 +1,7 @@
 import faiss
 import numpy as np
 import pickle
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.schema import Document
 import streamlit as st
 
