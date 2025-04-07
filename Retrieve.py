@@ -3,6 +3,7 @@ import numpy as np
 import pickle
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.schema import Document
+import streamlit as st
 
 from config import VECTORSTORE_PATH, SIMILARITY_THRESHOLD, MAX_CHUNKS
 
@@ -26,7 +27,10 @@ def retrieve_relevant_chunks(query, vectorstore_path, similarity_threshold, max_
         documents: list[Document] = pickle.load(f)
 
     # Load embedding model (E5)
-    embedding_model = HuggingFaceEmbeddings(model_name="intfloat/e5-large-v2")
+    embedding_model = HuggingFaceEmbeddings(
+        model_name="intfloat/e5-base-v2",
+        model_kwargs={"use_auth_token": st.secrets["HF_TOKEN"]}
+    )
 
     # Embed and normalize the query
     formatted_query = f"query: {query.strip()}"
