@@ -1,5 +1,6 @@
 import streamlit as st
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+
 
 st.title("Embedding Model Test – MiniLM")
 

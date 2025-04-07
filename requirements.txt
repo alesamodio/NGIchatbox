@@ -1,7 +1,7 @@
 streamlit
 langchain
+langchain-community
 faiss-cpu
-sentence-transformers==2.2.2
-transformers==4.30.2
-torch==2.0.1+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+sentence-transformers==2.6.1
+transformers==4.38.2
+torch==2.2.2
