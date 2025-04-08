@@ -2,7 +2,8 @@ streamlit
 langchain
 langchain-community
 faiss-cpu
-sentence-transformers==2.2.2
+torch==2.2.2
 transformers==4.30.2
-torch
+tokenizers==0.13.3
+sentence-transformers==2.2.2
 openai
